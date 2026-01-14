@@ -6,14 +6,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MAILS_TEST = os.getenv("MAILS_TEST")
+MAIL_DESTINO = os.getenv("MAIL_DESTINO")
+MAIL_DESTINO_2 = os.getenv("MAIL_DESTINO_2")
 
 def main():
 
   conn = connect_db()
   cursor = conn.cursor()
   #mails_pas = extract_mail_pas(cursor)
-  mails_pas = MAILS_TEST
+  mails_pas = [(MAIL_DESTINO,),(MAIL_DESTINO_2,)]
   gen_mails_pas(mails_pas)
 
 if __name__ == "__main__":
