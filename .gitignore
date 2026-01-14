@@ -1,0 +1,5 @@
+__pycache__/
+pas_env/
+*.pyc
+*.pyo
+*.pyd
