@@ -13,8 +13,7 @@ def main():
 
   conn = connect_db()
   cursor = conn.cursor()
-  #mails_pas = extract_mail_pas(cursor)
-  mails_pas = [(MAIL_DESTINO,),(MAIL_DESTINO_2,)]
+  mails_pas = extract_mail_pas(cursor)
   gen_mails_pas(mails_pas)
 
 if __name__ == "__main__":
