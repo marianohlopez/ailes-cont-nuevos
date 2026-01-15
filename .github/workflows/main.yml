@@ -31,5 +31,9 @@ jobs:
           MAIL_AUTOR: ${{ secrets.MAIL_AUTOR }}
           APP_GMAIL_PASS: ${{ secrets.APP_GMAIL_PASS }}
           MAIL_DESTINO: ${{ secrets.MAIL_DESTINO }}
+          MAIL_DESTINO_2: ${{ secrets.MAIL_DESTINO_2 }}
+          CUIT: ${{ secrets.CUIT }}
+          FORM_CONT_PAS: ${{ secrets.FORM_CONT_PAS }}
+          MAIL_CONT: ${{ secrets.MAIL_CONT }}
         run: |
           python main.py
